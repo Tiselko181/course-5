@@ -1,0 +1,81 @@
+https://www.youtube.com/watch?v=rXNfDfqtM3M
+
+https://jquery.page2page.ru/index.php5/Заглавная_страница
+https://jqueryui.com
+
+0) Створити html-структуру:
+
+<div class="slider">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
+
+
+1)
+https://jquery.com/download/
+
+npm install jquery   		//встановити jquery
+
+2) Зробити імпорт у файл script.js:
+
+import $ from 'jquery';		//прописати звурху сторінки
+
+console.log($);      		//перевірити у консолі чи підключився jquery
+
+3) Робимо запит у гугл npm slick
+
+https://www.npmjs.com/package/slick-carousel?activeTab=readme
+
+npm i slick-carousel  		//прописуємо у терміналі VSCode,щоб встановити ці слайдери. 
+
+4) Тепер слайдери slick-carousel можна знайти у node_modules
+
+5) Підключаеємо слайдери у файл style.scss: Треба файли із розширенням .css
+
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+6) Треба зробити імпорт jquery-бібліотеки цього слікера у script.js, прописавши під import $ from 'jquery'; наступну строку:
+import 'slick-carousel';
+
+7) запускаємо наш слайдер - у script.js прописуємо:
+
+$('.slider').slick();
+
+8) класи, що створилися при запуску: (записуємо у style.scss)
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {}
+/* Лента слайдов */
+.slick-track{}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}

@@ -1,0 +1,39 @@
+@import "./chooseus";
+@import "./search";
+@import "./grandspain1";
+@import "./grandspain2";
+@import "./touristssay";
+
+
+
+.btn {
+    position: relative;
+
+    @include media(xxs) {
+        width: 139px;
+        height: 52px;
+        margin: 10px;
+    }
+
+    //.btn-text-wrap
+    &-text-wrap {
+        @include media (xxs) {
+            &__hidden {
+                display: none;
+            }
+        }
+    }
+}
+
+.btn-primary {
+    &::before {
+        content: url(#{$base-img-pass}images/svg/btn_rectangle.svg);
+        position: absolute;
+        right: 105px;
+        bottom: -6px;
+
+        @include media(xxs) {
+            display: none;
+        }
+    }
+}

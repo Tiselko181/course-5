@@ -1,0 +1,39 @@
+body {
+    font-family: $main-font;
+    font-size: $default-font-size;
+    font-weight: $default-font-weight;
+    font-style: $default-font-style;
+    line-height: $default-line-height;
+    color: $black-color;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: $h4-font-size;
+    font-weight: $h4-font-weight;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    font-weight: $h4-font-weight;
+}
+
+
+.sprite {
+    display: none
+}
+
+@include grid();
+
+

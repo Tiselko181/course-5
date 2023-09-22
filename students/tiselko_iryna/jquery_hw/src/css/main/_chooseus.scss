@@ -1,0 +1,142 @@
+.chooseus {
+    background-image: url(#{$base-img-pass}images/ChooseUs/WhyBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media () {
+        background-position: 15% 85%;
+    }
+
+    // .chooseus__content
+    
+    &__content {
+        padding: 190px 95px 50px 95px;
+
+        @include media() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 40px 20px 40px;
+        }
+    }
+
+    // .chooseus__title
+
+    &__title {
+        padding-bottom: 24px;
+
+        @include media (xs) {
+            padding-left: 0;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 0.6px;
+        }
+    }
+
+    // .chooseus__text
+
+    &__text {
+        padding-bottom: 32px;
+
+
+        @include media (xs) {
+            font-size: 14px;
+            letter-spacing: 0.6px;
+
+            &:last-of-type {
+                padding-bottom: 15px;
+            }
+        }
+    }
+
+    // .chooseus__btn-wrapper
+
+    &__btn-wrapper {
+        padding-bottom: 190px;
+
+        @include media(md) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        @include media() {
+            padding-bottom: 20px;
+        }
+
+        @include media(xxs) {
+            padding-top: 24px;
+            padding-bottom: 10px;
+        }
+    }
+
+    // .chooseus__img-wrapper
+
+    &__img-wrapper {
+        @include media (md) {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            padding: 0 15px 124px 15px;
+        }
+
+        @include media () {
+            padding-bottom: 60px;
+        }
+
+        @include media (xs) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    // .chooseus__img
+
+    &__img {
+        display: block;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        object-position: center;
+
+        @supports not (aspect-ratio: 3/2) {
+            height: 220px;
+        }
+
+        @include media () {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 700px) and (min-width: 577px) {
+            width: 40%;
+        }
+
+        @include media () {
+            width: 70%;
+        }
+
+        @include media (xxs) {
+            width: 90%;
+        }
+    }
+
+    // .chooseus__img-left
+
+    &__img-left {
+        margin: 124px 0 16px 50px;
+
+        @include media(md) {
+            margin: 0;
+        }
+    }
+
+    // .chooseus__img-right
+
+    &__img-right {
+        margin-left: 165px;
+
+        @include media(md) {
+            margin: 0;
+        }
+    }
+}
