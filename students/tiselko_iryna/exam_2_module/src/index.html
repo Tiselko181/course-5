@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Monticello</title>
+    <link rel="icon" type="images/png" href="/images/fav.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+    <header class="header">
+    </header>
+    <main class="main">
+    </main>
+    <footer class="footer" style="background-color:#3C7FD4">
+        <div class="container">
+            <div class="row">
+                <div class="footer__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8558.73471313815!2d-73.90462597362755!3d40.67463707410932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c4f226cf74d%3A0xb352e17b22c087fe!2sMcDonald&#39;s!5e0!3m2!1suk!2sua!4v1695560616759!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer__contact-form contact-form">
+                    <h2 class="footer__contact-title">get in touch</h2>
+                    <div class="contact-form__contact"></div>
+                    <form id="contacts" action="#" method="get" class="contact-form__inputs">
+                        <input type="text" name="name" id="name" placeholder="Enter your full name">
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <button class="contact-form__btn" type="submit" name="submit">
+                            <span>Submit</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-6 footer__logo">
+                    <img src="./images/Logo.png" alt="Monticello">
+                </div>
+                <div class="col-6 footer__socials">
+                    <svg class="faceb">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                    <svg class="twit">
+                        <use xlink:href="#twiter"></use>
+                    </svg>
+                    <svg class="insta">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </div>
+                <div class="col-6">
+                    <p class="copyright">Copyrights &copy; 2020 Montichello</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <svg class="sprite" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="instagram">
+            <path d="M20 16.4062C21.9688 16.4062 23.5938 18.0312 23.5938 20C23.5938 22 21.9688 23.5938 20 23.5938C18 23.5938 16.4062 22 16.4062 20C16.4062 18.0312 18 16.4062 20 16.4062ZM20 22.3438C21.2812 22.3438 22.3125 21.3125 22.3125 20C22.3125 18.7188 21.2812 17.6875 20 17.6875C18.6875 17.6875 17.6562 18.7188 17.6562 20C17.6562 21.3125 18.7188 22.3438 20 22.3438ZM24.5625 16.2812C24.5625 16.75 24.1875 17.125 23.7188 17.125C23.25 17.125 22.875 16.75 22.875 16.2812C22.875 15.8125 23.25 15.4375 23.7188 15.4375C24.1875 15.4375 24.5625 15.8125 24.5625 16.2812ZM26.9375 17.125C27 18.2812 27 21.75 26.9375 22.9062C26.875 24.0312 26.625 25 25.8125 25.8438C25 26.6562 24 26.9062 22.875 26.9688C21.7188 27.0312 18.25 27.0312 17.0938 26.9688C15.9688 26.9062 15 26.6562 14.1562 25.8438C13.3438 25 13.0938 24.0312 13.0312 22.9062C12.9688 21.75 12.9688 18.2812 13.0312 17.125C13.0938 16 13.3438 15 14.1562 14.1875C15 13.375 15.9688 13.125 17.0938 13.0625C18.25 13 21.7188 13 22.875 13.0625C24 13.125 25 13.375 25.8125 14.1875C26.625 15 26.875 16 26.9375 17.125ZM25.4375 24.125C25.8125 23.2188 25.7188 21.0312 25.7188 20C25.7188 19 25.8125 16.8125 25.4375 15.875C25.1875 15.2812 24.7188 14.7812 24.125 14.5625C23.1875 14.1875 21 14.2812 20 14.2812C18.9688 14.2812 16.7812 14.1875 15.875 14.5625C15.25 14.8125 14.7812 15.2812 14.5312 15.875C14.1562 16.8125 14.25 19 14.25 20C14.25 21.0312 14.1562 23.2188 14.5312 24.125C14.7812 24.75 15.25 25.2188 15.875 25.4688C16.7812 25.8438 18.9688 25.75 20 25.75C21 25.75 23.1875 25.8438 24.125 25.4688C24.7188 25.2188 25.2188 24.75 25.4375 24.125Z"/>
+            <circle opacity="0.4" cx="20" cy="20" r="19.5" fill="none" stroke="white"/>
+        </symbol>
+        <symbol id="twiter">
+            <path d="M26.3438 16.75C26.3438 16.9062 26.3438 17.0312 26.3438 17.1875C26.3438 21.5312 23.0625 26.5 17.0312 26.5C15.1562 26.5 13.4375 25.9688 12 25.0312C12.25 25.0625 12.5 25.0938 12.7812 25.0938C14.3125 25.0938 15.7188 24.5625 16.8438 23.6875C15.4062 23.6562 14.1875 22.7188 13.7812 21.4062C14 21.4375 14.1875 21.4688 14.4062 21.4688C14.6875 21.4688 15 21.4062 15.25 21.3438C13.75 21.0312 12.625 19.7188 12.625 18.125V18.0938C13.0625 18.3438 13.5938 18.4688 14.125 18.5C13.2188 17.9062 12.6562 16.9062 12.6562 15.7812C12.6562 15.1562 12.8125 14.5938 13.0938 14.125C14.7188 16.0938 17.1562 17.4062 19.875 17.5625C19.8125 17.3125 19.7812 17.0625 19.7812 16.8125C19.7812 15 21.25 13.5312 23.0625 13.5312C24 13.5312 24.8438 13.9062 25.4688 14.5625C26.1875 14.4062 26.9062 14.125 27.5312 13.75C27.2812 14.5312 26.7812 15.1562 26.0938 15.5625C26.75 15.5 27.4062 15.3125 27.9688 15.0625C27.5312 15.7188 26.9688 16.2812 26.3438 16.75Z"/>
+            <circle opacity="0.4" cx="20" cy="20" r="19.5" fill="none" stroke="white"/>
+        </symbol>
+        <symbol id="facebook">
+            <path d="M23.7188 21H21.375V28H18.25V21H15.6875V18.125H18.25V15.9062C18.25 13.4062 19.75 12 22.0312 12C23.125 12 24.2812 12.2188 24.2812 12.2188V14.6875H23C21.75 14.6875 21.375 15.4375 21.375 16.25V18.125H24.1562L23.7188 21Z"/>
+            <circle opacity="0.4" cx="20" cy="20" r="19.5" fill="none" stroke="white"/>
+        </symbol>
+        <symbol id="arrow_down">
+            <path opacity="0.7" d="M40.5447 20C40.5447 30.7685 31.7958 39.5 21.0011 39.5C10.2064 39.5 1.45746 30.7685 1.45746 20C1.45746 9.23147 10.2064 0.5 21.0011 0.5C31.7958 0.5 40.5447 9.23147 40.5447 20Z" stroke="white"/>
+        </symbol>
+    </svg>
+    
+</body>
+
+</html>
