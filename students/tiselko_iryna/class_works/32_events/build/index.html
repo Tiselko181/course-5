@@ -22,17 +22,17 @@
                 <form class="add-student-form" method="post" action="#">
                     <div class="form-floating mb-4 reqaired">
                         <input type="text" name="course-name" class="form-control" id="courseName"
-                            placeholder="Course name" value="html">
+                            placeholder="Course name" value="">
                         <label for="courseName">Course name</label>
                     </div>
                     <div class="form-floating mb-4 reqaired">
                         <input type="number" name="duration" class="form-control" id="duration" placeholder="Duration"
-                            value="45">
+                            value="">
                         <label for="duration">Duration</label>
                     </div>
                     <div class="form-floating mb-4 reqaired">
                         <input type="date" name="start-date" class="form-control" id="startDate"
-                            placeholder="Start date" value="2023-09-12">
+                            placeholder="Start date" value="">
                         <label for="startDate">Start date</label>
                     </div>
                     <div class="form-floating mb-4 reqaired">
@@ -44,7 +44,7 @@
                         </select>
                         <label for="speakers">Speakers</label>
                     </div>
-                    <div id="card-prev" class="card mb-3">
+                    <div id="card_prev" class="card mb-3" style="display: none;">
                         <div class="row g-0">
                             <div class="col-md-2">
                                 <img src="./images/dizel.jpg" class="img-fluid w-100 object-fit-fill border rounded"
@@ -83,46 +83,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="inner-box">
-                                    <th scope="row">
-                                        <div class="event-date">
-                                            <p>2023-09-21</p>
-                                            <p>Duration: 44 days</p>
-                                            <p>Course Name: cbv </p>
-                                        </div>
-                                    </th>
-                                    <td>
-                                        <div class="card course-list__card">
-                                            <img width="150" class="card-img-top" src="./images/dizel.jpg"
-                                                alt="Win Dizel">
-                                            <div class="card-body">
-                                                <p class="card-title">Win Dizel</p>
-                                            </div>
-                                        </div>
-                                        <h3></h3>
-                                    </td>
-                                    <td>
-                                        <ul class="students-list">
-                                            <li class="students-list__item mb-2">
-                                                <span>Petya Petya</span>
-                                                <button type="button" class="btn btn-danger">Remove</button>
-                                            </li>
-                                            <li class="students-list__item">
-                                                <span>Petya Petya</span>
-                                                <button type="button" class="btn btn-danger">Remove</button>
-                                            </li>
-                                        </ul>
-                                        <div class="primary-btn">
-                                            <button data-course-id="1" class="btn btn-primary add-student">
-                                                Add Students
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle">
-                                        <button data-course-id="1" type="button"
-                                            class="btn btn-danger remove-course">Remove Course</button>
-                                    </td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </div>

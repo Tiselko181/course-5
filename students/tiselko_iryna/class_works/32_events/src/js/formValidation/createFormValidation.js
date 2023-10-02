@@ -10,23 +10,24 @@ function createFormValidation(form, createCourse) {
         }
     }
     const validator = new JustValidate(form, options, dict);
-    console.log(form);
+
     validator.addField('[name="course-name"]', [
         {
             rule: 'required',
+            errorMessage: 'Is required',
         },
         {
             rule: 'minLength',
-            value: 3,
+            value: 2,
+            errorMessage: "The field must contain a minimum of 2 characters"
         },
         {
             rule: 'maxLength',
-            value: 15,
+            value: 20,
         },
         {
             rule: 'customRegexp',
             value: /[a-z]/gi,
-            errorMessage: 'Is required',
         },
     ]).addField('[name="duration"]', [
         {
@@ -45,12 +46,20 @@ function createFormValidation(form, createCourse) {
                 format: 'yyyy-MM-dd',
                 //isBefore: 2023-09-12,
             })),
-            errorMessage: 'Date should be in dd MMM yyyy format',
+            errorMessage: 'Date should be in yyyy-MM-dd  format',
+        },
+    ]).addField('[name="speakers"]', [
+        {
+            rule: 'required',
+            errorMessage: 'is required',
+
         }
     ]);
+
     validator.setCurrentLocale('uk');
 
     validator.onSuccess((event) => {
+        if (typeof createCourse !== 'function') return;
         createCourse(new FormData(event.target))
     })
 }
