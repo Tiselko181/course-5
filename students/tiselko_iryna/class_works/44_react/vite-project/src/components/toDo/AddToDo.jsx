@@ -1,76 +1,59 @@
-import { useState } from 'react';
-import DatePicker from 'react-datepicker';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export default function AddToDo({ changeToDolist }) {
+AddToDo.propTypes = {
+    changeToDoList: PropTypes.func.isRequired
+};
+
+export default function AddToDo({ changeToDoList }) {
+
     const [toDo, setToDo] = useState('');
-    const [startDate, setStartDate] = useState('');
+    const [startDate, setStartDate] = useState((''));
+    const [validation, setValidation] = useState(false);
 
     function onSubmitHandler(e) {
         e.preventDefault();
+        setValidation(true);
 
-        if (toDo && startDate.getTime() >= new Date().getDate()) {
-            console.log(toDo, startDate);
-            changeToDolist({
-                toDo,
+        if (toDo && startDate.getDate() >= new Date().getDate()) {
+            changeToDoList({
+                toDo: toDo,
                 date: startDate.getTime(),
             });
-            clearForm();
+
+            cleanForm();
         }
     }
 
-    function clearForm() {
+    function cleanForm() {
         setToDo('');
         setStartDate('');
+        setValidation(false);
     }
 
     return (
         <div className="py-8 border-b mb-4">
-            <form action="#" className="flex gap-5 items-center" onSubmit={onSubmitHandler}>
+            <form className="flex gap-5 items-center" onSubmit={onSubmitHandler} action="#">
                 <label className="block grow">
-                    <span>Need to Do:</span>
+                    <span>I am planning:</span>
                     <input
-                        className="block w-full border-4 border-indigo-500/100 py-2"
+                        className="block w-full border-4 border-indigo-500/100"
                         type="text"
                         name="todo"
                         value={toDo}
-                        onChange={(e) => setToDo(e.target.value)}
-                    />
+                        onChange={(e) => setToDo(e.target.value)} />
+                    {!toDo && validation && <div className="text-red-500">Поле обовязкове</div>}
                 </label>
-                <label className="block">
-                    <span>Winish till:</span>
+                <label htmlFor="block">
+                    <span>Finish untill:</span>
                     <div className="block w-full border-4 border-indigo-500/100">
-                        <DatePicker
-                            showIcon
-                            selected={startDate}
-                            onChange={(date) => setStartDate(date)}
-                            icon={
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="1em"
-                                    height="1em"
-                                    viewBox="0 0 48 48"
-                                >
-                                    <mask id="ipSApplication0">
-                                        <g fill="none" stroke="#fff" strokeLinejoin="round" strokeWidth="4">
-                                            <path strokeLinecap="round" d="M40.04 22v20h-32V22"></path>
-                                            <path
-                                                fill="#fff"
-                                                d="M5.842 13.777C4.312 17.737 7.263 22 11.51 22c3.314 0 6.019-2.686 6.019-6a6 6 0 0 0 6 6h1.018a6 6 0 0 0 6-6c0 3.314 2.706 6 6.02 6c4.248 0 7.201-4.265 5.67-8.228L39.234 6H8.845l-3.003 7.777Z"
-                                            ></path>
-                                        </g>
-                                    </mask>
-                                    <path
-                                        fill="currentColor"
-                                        d="M0 0h48v48H0z"
-                                        mask="url(#ipSApplication0)"
-                                    ></path>
-                                </svg>
-                            }
-                        />
+                        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
                     </div>
+                    {!startDate && validation && <div className="text-red-500">Поле обовязкове</div>}
                 </label>
-                <button type="submit" className="text-white mt-5 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add New Task</button>
+                <button className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-5" type="submit">Add</button>
             </form>
         </div>
     );
