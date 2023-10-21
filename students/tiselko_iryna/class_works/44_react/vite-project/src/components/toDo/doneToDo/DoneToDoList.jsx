@@ -1,10 +1,20 @@
-import DoneToDoTask from "./DoneToDoTask";
+import Headings from "../../../ui/heading/Heading";
+import PropTypes from "prop-types";
 
-export default function DoneToDoList() {
+DoneToDoList.propTypes = {
+    children: PropTypes.object
+};
+
+export default function DoneToDoList({ children }) {
     return (
         <>
-            <h2>DoneToDoList</h2>
-            <DoneToDoTask />
+            <Headings
+                type="h2"
+                props={{ className: "mb-5 text2xl text-center font-bold" }}
+            >
+                Finnished Tasks
+            </Headings >
+            {children}
         </>
     );
 }

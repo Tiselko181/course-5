@@ -1,53 +1,66 @@
-import { useEffect, useState } from "react";
 import AddToDo from "./AddToDo";
 import Analytics from "./analytics/Analytics";
 import DoneToDoList from "./doneToDo/DoneToDoList";
-import ToDoList from "./toDolist/ToDoList";
-import ToDoTask from "./toDolist/ToDoTask";
-
-const toDoLocalStorageKey = 'toDo';
+import ToDoList from "./todoList/ToDoList";
+import ToDoTask from "./todoList/ToDoTask";
+import DoneToDoTask from "./doneToDo/DoneToDoTask";
+import useDoneToDo from "./hooks/doneToDo/useDoneToDo";
+import useToDo from "./hooks/toDo/useToDo";
+import SearchToDo from "../SearchToDo";
+import useSearchToDo from "./hooks/searchToDo/useSearchToDo";
 
 export default function MainToDo() {
-    const [toDoList, setToDoList] = useState(() => {
-        return JSON
-            .parse(
-                window.localStorage.getItem(toDoLocalStorageKey)
-            ) || [];
-    });
-
-    function addToDo(newToDo) {
-        newToDo.id = Date.now();
-
-        setToDoList([
-            newToDo,
-            ...toDoList,
-        ]);
-    }
-
-    useEffect(function () {
-        window.localStorage.setItem('toDo', JSON.stringify(toDoList));
-    }, [toDoList]);
-
-    console.log(toDoList);
+    const [toDoList, addToDo, setToDoList] = useToDo();
+    const [doneToDoList, addDoneToDo] = useDoneToDo(setToDoList);
+    const [searchValue, filtredToDoList, setSearchValue] = useSearchToDo(toDoList);
 
     return (
         <section className="container mx-auto">
             <h1 className="text-5xl font-bold text-center pb-4 border-b mb-4">MainToDo</h1>
             <AddToDo changeToDoList={addToDo} />
             <ToDoList>
-                {
-                    toDoList.length ?
-                        toDoList.map(
-                            (toDo, index) => <ToDoTask key={toDo.id} index={index} toDo={toDo} />
-                        ) : <p className="mb-5 text-center">Nothing planning</p>
-                }
+                <SearchToDo searchValue={searchValue} setSearchValue={setSearchValue} />
+                <ol className="py-5">
+                    {
+                        filtredToDoList.length ?
+                            filtredToDoList.map(
+                                (toDo, index) => <ToDoTask
+                                    key={toDo.id}
+                                    toDo={toDo}
+                                    index={index}
+                                    doneHeandle={addDoneToDo}
+                                />
+                            ) :
+                            <p className="mb-5 text-center">Нічого не заплановано</p>
+                    }
+                </ol>
             </ToDoList>
             {/* {
                 toDoList.length ?
                     <ToDoList toDoList={toDoList} /> :
-                    <p className="mb-5 text-center">Nothing planning</p>
+                    <p className="mb-5 text-center">Нічого не заплановано</p>
             } */}
-            <DoneToDoList />
+            {
+                doneToDoList.length ? < DoneToDoList>
+                    <div className="mb-5">
+                        <DoneToDoTask headers={{
+                            title1: 'Task',
+                            title2: 'Finsh till:',
+                            title3: 'Finish Date:',
+                        }} />
+                        {
+                            doneToDoList.map(
+                                (doneToDo, index) => <DoneToDoTask
+                                    key={doneToDo.id}
+                                    index={index}
+                                    doneToDo={doneToDo}
+                                />
+                            )
+                        }
+                    </div>
+                </DoneToDoList> :
+                    null
+            }
             <Analytics />
         </section>
     );
