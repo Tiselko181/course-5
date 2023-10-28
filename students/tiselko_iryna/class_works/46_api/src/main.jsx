@@ -5,6 +5,7 @@ import './index.css';
 import { BrowserRouter, Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './layout/Home';
 import Movies from './layout/Movies';
+import Movie from './layout/Movie';
 import Tv from './layout/Tv';
 import ChechoutPage from './pages/CheckoutPage';
 import Checkout from './layout/Checkout';
@@ -22,8 +23,12 @@ const router = createBrowserRouter([
                 laxy: () => import('./layout/Home.jsx')
             },
             {
-                path: '/Movies',
+                path: '/movies',
                 element: <Movies />
+            },
+            {
+                path: '/movies/:id',
+                element: <Movie />
             },
             {
                 path: '/tv',
