@@ -3,7 +3,6 @@
     margin-bottom: 150px;
     position: relative;
     width: 100vw;
-    
 
     @include media (md) {
         margin-top: 120px;
@@ -229,7 +228,6 @@
     }
 
     // .about__content
-
     &__content {
         padding-bottom: 40px;
 
@@ -247,7 +245,6 @@
     }
 
     // .about__btn
-
     &__btn {
         @include media (md) {
             width: 145px;
@@ -259,14 +256,12 @@
     }
 
     // .about__btn-wrapper
-
     &__btn-wrapper {
         padding-left: 0;
     }
 
 
     // .about__subcontent
-
     &__subcontent {
         color: $black-color;
         font-size: 15px;
@@ -288,7 +283,6 @@
     }
 
     // .about__icon
-
     &__icon {
         width: 9px;
         height: 17px;

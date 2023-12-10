@@ -44,7 +44,6 @@
 	}
 
 	// .hero-slider__item
-
 	&__item {
 		position: relative;
 		height: 100vh;
@@ -76,7 +75,6 @@
 	}
 
 	// .hero-slider__img
-	
 	&__img {
 		position: absolute;
 		top: 0;
@@ -91,7 +89,6 @@
 	}
 
 	// .hero-slider__container
-
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -106,7 +103,6 @@
 	}
 
 	// .hero-slider__title
-
 	&__title {
 		color: $white-color;
 		
@@ -148,18 +144,12 @@
 
 
 	// .hero-slider__icon
-	
 	&__icon{
 		position: absolute;
 		z-index: 10;
 		left: 50%;
 		bottom: 5%;
 		transform: translateX(-50%);
-
-		// @include media(xxs) {
-		// 	padding-top: 50px;
-		// }
-
 	}
 }
 
