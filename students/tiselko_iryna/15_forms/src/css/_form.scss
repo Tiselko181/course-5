@@ -1,0 +1,21 @@
+$background-form: $gray-3-color;
+
+
+
+.container {
+    background-color: $background-form;
+}
+
+.address {
+    display: flex;
+    align-items: self-end;
+}
+
+.confirm {
+    font-size: 14px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+}
