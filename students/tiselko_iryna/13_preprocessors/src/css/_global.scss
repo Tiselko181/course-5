@@ -1,0 +1,86 @@
+@font-face {
+    font-family: $default-font-name;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/raleway-v28-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: $default-font-name;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/raleway-v28-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: $btn-font-name;
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/open-sans-v35-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: $headline-font-name;
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/roboto-v30-latin-900.woff2') format('woff2');
+}
+
+
+body {
+    font-family: $main-font;
+    font-size: $default-font-size;
+    font-weight: $default-font-weight;
+    font-style: normal;
+    line-height: 24px;
+    color: $color-darkgray;
+}
+
+h1 {
+    font-family: $headline-font-name, $fallback;
+    font-size: $h1-font-size;
+    color: $color-gold;
+    line-height: 66px;
+}
+
+h2 {
+    font-family: $headline-font-name, $fallback;
+    font-size: $h2-font-size;
+    color: $color-gray;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    color: $color-gray;
+}
+
+button {
+    font-family: $btn-font-name;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 14px;
+    color: $color-gray;
+    border: 1px solid $color-gold;
+    background-color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: $container-padding;
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}

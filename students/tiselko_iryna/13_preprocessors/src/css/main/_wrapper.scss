@@ -1,0 +1,38 @@
+.wrapper {
+    margin-top: 85px;
+    margin-bottom: 65px;
+    margin-left: 70px;
+    border: 1px solid $color-gold;
+    width: 430px;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper::before {
+    content: '';
+    display: block;
+    width: 230px;
+    height: calc(100% + 4px);
+    background-color: $color-white;
+    z-index: -1;
+    position: absolute;
+    top: -2px;
+    right: 100px;
+}
+
+.wrapper::after {
+    content: '';
+    display: block;
+    width: calc(100% + 4px);
+    height: 230px;
+    background-color: $color-white;
+    z-index: -2;
+    position: absolute;
+    top: 100px;
+    left: -2px;
+}
+
+.photo {
+    border: 1px solid $color-gold;
+    margin: 15px;
+}

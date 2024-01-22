@@ -1,0 +1,52 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // .title__sub
+
+    &__sub {
+        font-size: $subtitle;
+        color: $color-lightgray;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+
+    // .title__main
+
+    &__main {
+        padding-bottom: 50px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &__main::before {
+        content: '';
+        display: block;
+        width: 450px;
+        height: 1px;
+        background-color: $color-gold;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+    &__main::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-image: url(../../images/bonfire-sharp1.svg);
+        background-image: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $color-white;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

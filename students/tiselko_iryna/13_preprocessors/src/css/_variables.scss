@@ -1,0 +1,30 @@
+// colors
+$color-white: #fff;
+$color-lightgray: #898F8F;
+$color-gray: #666;
+$color-darkgray: #333;
+$color-gold: #FC0;
+
+// fonts
+$default-font-name: 'Raleway';
+$btn-font-name: 'Open Sans';
+$headline-font-name: 'Roboto';
+$fallback: Arial, Helvetica, sans-serif;
+$main-font: $default-font-name, $fallback;
+
+// font-size
+$default-font-size: 14px;
+$h1-font-size: 60px;
+$h2-font-size: 36px;
+$h3-font-size: 24px;
+$subtitle: 18px;
+$btn-font-size: inherit;
+
+
+// font-weight
+$default-font-weight: 500;
+
+
+// container
+$container-padding: 15px;
+$container-max-width: 1170px;

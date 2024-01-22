@@ -1,0 +1,103 @@
+.col-6:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.col-6:last-child::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 560px;
+    background-color: #FC0;
+    position: absolute;
+    left: 0;
+}
+
+
+.content__name {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.content__name::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: $color-gold;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+}
+
+// .content__profession
+
+.content__profession {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+// .content__socials
+
+.content__socials {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding-bottom: 49px;
+}
+
+// .content__about
+
+.content__about {
+    padding-bottom: 20px;
+    width: 430px;
+    text-align: center;
+    position: relative;
+}
+
+.content__about::after {
+    content: '';
+    display: block;
+    max-width: 100%;
+    width: 50px;
+    height: 4px;
+    background-image: url(../../images/decore_line.svg);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+}
+
+// .content__btn
+
+.content__btn {
+    margin-top: 25px;
+}
+
+
+.btn__btn {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $btn-font-name;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 14px;
+    color: $color-gray;
+    border: 1px solid $color-gold;
+    background-color: $color-white;
+    padding: 5px 10px;
+
+}
+
+.btn__btn:hover {
+    color: $color-white;
+    background-color: $color-gold;
+}
