@@ -1,0 +1,40 @@
+.news {
+    border: 1px solid $subtitle-content-color;
+    margin-left: 70px;
+
+    // .news__item
+
+    &__item {
+        padding-top: 10px;
+    }
+
+    // .news__list
+
+    &__list {
+        padding: 0 15px;
+    }
+
+    // .news__item
+
+    &__item {
+        border-bottom: 1px solid $subtitle-content-color;
+        padding-bottom: 15px;
+    }
+
+    // .news__date
+
+    &__date {
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 1.2px;
+        padding-bottom: 10px;
+    }
+
+    // .news__link
+
+    &__link {
+        text-decoration: none;
+		color: $black-color;
+        padding: 10px;
+    }
+}

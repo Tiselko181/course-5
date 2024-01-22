@@ -1,0 +1,112 @@
+// colors
+$bg-color: #39C;
+$main-border: #2B81AC;
+$white-color: #fff;
+$black-color: #000;
+$lisbon: #39C;
+$paris: #3CC;
+$belgrade: #969;
+$new-york:#9C9;
+$cair:#FC6;
+$tel-avive:#E2674A;
+$venice:#C24747;
+$new-delhi:#699;
+$san-francisko:#C69;
+$tokyo:#396;
+$sydney:#669;
+$orange-color: #f76707;
+$green-color: green;
+$periwinkle-gray-color: #BCD0E5;
+$gray-3-color: #cac2c2;
+$gray-6-color: #d6d4d4;
+$dark-gray: #333;
+$dark-gray-opacity: rgb(51, 51, 51, 0.70);
+$gray-color: #999;
+$brown-color: #565656;
+$subtitle-content-color: #c8c7c7;
+$dodger-blue: #5373FD;
+$dodger-dark: #486BFE;
+$block-bg-color: rgba(35, 35, 35, 0.90);
+$bittersweetapprox: #FF6363;
+$azure-radiance: #00A2FF;
+
+$width: 15px;
+
+
+// fonts
+$default-font-name: 'Open Sans';
+$secondary-font-name: 'Open Sans';
+$btn-font-name: 'Open Sans';
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-size: 14px;
+$default-font-weight: 400;
+$default-font-style: normal;
+$default-line-height: normal;
+$default-letter-spacing: 0.6px;
+$main-font: $default-font-name, $fallback;
+$secondary-font: $secondary-font-name, $fallback;
+$font-path: './fonts/';
+
+//h1
+$h1-font-size: 46px;
+$h1-font-style: normal;
+$h1-font-weight: 700;
+$h1-line-height: 52px;
+$h1-letter-spacing: 2.4px;
+$h1-color: $gray-3-color;
+
+//h2
+$h2-font-size: 30px;
+$h2-font-weight: 400;
+$h2-line-height: inherit;
+
+
+//h3
+$h3-font-size: 20px;
+$h3-font-weight: 700;
+
+//h4
+$h4-font-size: 18px;
+$h4-font-weight: 400;
+
+//h5
+$h5-font-size: 19px;
+
+
+// btn-variables
+$btn-radius: 4px;
+$btn-width: 213px;
+$btn-height: 60px;
+$border-btn-color-primary: $orange-color;
+$border-btn-color-secondary: $periwinkle-gray-color;
+$btn-bg: $dodger-blue;
+$btn-text-color: $white-color;
+$btn-font-size: 16px;
+$btn-font-weight: inherit;
+$btn-line-height: 20px;
+$btn-letter-spacing: 1.12px;
+$border-weight: 213px;
+
+
+
+
+// containers
+$default-body-color: $white-color;
+
+$container-padding: 15px;
+$container-max-width: 1400px;
+
+$gap: 15px;
+$defaulp-count-col: 12;
+
+$default-width: 1400px;
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 992px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px
+);
+
+$base-img-pass: '../';
