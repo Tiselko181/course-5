@@ -1,0 +1,48 @@
+// colors
+$orang-color: #f76707;
+$white-color: #fff;
+$periwinkle-gray: #BCD0E5;
+$gray-light: lightgray;
+// $gray-3-color: #dee2e6;
+// $gray-6-color: #868e96;
+// $grey-7-color: #495057;
+// $gray-8-color: #343a40;
+// $green-color: green;
+$border-btn-color-primary: $orang-color;
+$border-btn-color-secondary: $periwinkle-gray;
+
+$border-color: $gray-light;
+$default-border: 1px solid $gray-light;
+
+$default-body-color: $white-color;
+
+
+$border-height: 50px;
+
+$width: 15px;
+
+
+// fonts
+$default-font-name: 'Roboto';
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-size: 18px;
+
+$main-font: $default-font-name, $fallback;
+$font-path: './fonts/';
+
+// containers
+$container-padding: 15px;
+$container-max-width: 1200px;
+
+$gap: 15px;
+$defaulp-count-col: 12;
+
+$default-width: 1200px;
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 992px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px
+);

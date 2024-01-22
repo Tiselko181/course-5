@@ -1,0 +1,12 @@
+@import "./menu";
+
+.header {
+    border: 1px solid $periwinkle-gray;
+    box-shadow: 5px 5px 20px $periwinkle-gray;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

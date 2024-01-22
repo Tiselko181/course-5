@@ -1,0 +1,33 @@
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 15px 40px;
+    border-radius: 4px;
+    height: $border-height;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+
+    &-small {
+        padding: 15px 20px;
+        height: 46px;
+    }
+
+    &-text-wrap {
+        white-space: nowrap;
+    }
+
+    &-primary {
+        border-color: $border-btn-color-primary;
+        background-color: $orang-color;
+        color: $white-color;
+    }
+
+    &-secondary {
+        border-color: $border-btn-color-secondary;
+        color: #2f281e;
+    }
+}
