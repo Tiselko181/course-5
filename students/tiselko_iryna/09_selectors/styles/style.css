@@ -1,0 +1,65 @@
+body {
+    font-family: Open Sans, Arial, Helvetica, sans-serif; 
+    font-size: 18px; 
+    color: #070707; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 47px; 
+    font-weight: 700;
+    text-align: left;
+}
+
+h2 {
+    font-size: 34px; 
+    font-weight: 700;
+}
+
+.menu {
+   border-bottom: 1px solid #828282;
+}
+
+.nav__items {
+    list-style-type: none;
+}
+
+.nav__links {
+    text-decoration: none; 
+    color: #828282;
+}
+
+.nav__links:hover {
+    font-weight: 400;
+    color: var(--black, #070707);
+}
+
+#about, #portfolio {
+    background-color: #F6F6F6;
+}
+
+.skills__level > figcaption {
+    font-size: 14px; 
+    color: #828282;
+}
+
+.portfolio_text {
+    text-decoration: underline;
+}
+
+.contact__btn {
+    width: 180px; 
+    height: 42px; 
+    background-color: #070707; 
+    border-radius: 100px;
+}
+
+.contact__btn__name {
+    font-weight: 700; 
+    color: #FFFFFF;
+}
+
+.last_p {
+    font-size: 14px; 
+    color: #828282;
+}
