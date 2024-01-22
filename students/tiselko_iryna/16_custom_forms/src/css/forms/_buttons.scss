@@ -1,0 +1,43 @@
+.button {
+
+    // .button__action
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        background-color: $gray-8-color;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    // .button__cancel
+
+    &__cancel {
+        color: $orang-color;
+        background-color: $white-color;
+
+        &:hover {
+            color: $white-color;
+            background-color: $orang-color;
+        }
+    }
+
+    // .button__register
+
+    &__register {
+        color: $white-color;
+        background-color: $orang-color;
+
+        &:hover {
+            color: $orang-color;
+            background-color: $white-color;
+        }
+    }
+}
+
+.btn {
+    font-size: 18px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    border: 1px solid $grey-7-color;
+}

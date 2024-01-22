@@ -1,0 +1,17 @@
+.textarea {
+
+    // .textarea__form-area
+
+    &__form-area {
+        height: 180px;
+        padding: 10px;
+        resize: none;
+        outline: none;
+    }
+
+    // .textarea__form-icon
+
+    &__form-icon {
+        height: auto;
+    }
+}
