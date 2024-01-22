@@ -1,0 +1,77 @@
+.footer {
+    background-color: $black-color;
+    // .footer__logo
+
+    &__logo {
+        margin: 80px 0 0 0;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+
+    // .footer__sibtitle
+
+    &__sibtitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2.8px;
+        color: $white-color;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    // .footer__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin: 0 0 80px 0;
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.facebook,
+.twiter,
+.linkedin,
+.youtube,
+.pinterest {
+    fill: $white-color;
+
+    &:hover {
+        fill: $dodger-blue;
+    }
+}
+
+.facebook {
+    width: 20px;
+    height: 32px;
+}
+
+.twiter {
+    width: 32px;
+    height: 32px;
+}
+
+.linkedin {
+    width: 28px;
+    height: 32px;
+}
+
+.youtube {
+    width: 36px;
+    height: 32px;
+}
+
+.pinterest {
+    width: 31px;
+    height: 32px;
+}

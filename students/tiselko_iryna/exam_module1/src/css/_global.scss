@@ -1,0 +1,46 @@
+body {
+    font-family: $main-font;
+    font-size: $default-font-size;
+    font-weight: $default-font-weight;
+    font-style: $default-font-style;
+    line-height: $default-line-height;
+    letter-spacing: $default-letter-spacing;
+    color: $white-color;
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+    line-height: $h1-line-height;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: $secondary-font;
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    line-height: $h2-line-height;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    font-weight: $h4-font-weight;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.sprite {
+    display: none
+}
+
+@include grid();
+
+

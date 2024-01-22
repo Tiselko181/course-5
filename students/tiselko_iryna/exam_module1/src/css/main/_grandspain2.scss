@@ -1,0 +1,14 @@
+.grandspain2 {
+    background-image: url(#{$base-img-pass}images/GrandSpain_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grandspain {
+    // .grandspain__reverse
+
+    &__reverse {
+        flex-direction: row-reverse;
+    }
+}
