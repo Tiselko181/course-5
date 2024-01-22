@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #070707;
+    text-align: center;
+    letter-spacing: .3px;
+    line-height: normal;
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 47px;
+    font-weight: 700;
+    text-align: left;
+    padding: 35px 0 39px 0;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+    padding-top: 101px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.nav__caption {
+    border-bottom: 1px solid #828282;
+}
+
+.nav__menu {
+    margin-top: 23px;
+    margin-bottom: 29px;
+}
+
+.nav__items {
+    padding: 0 20px;
+}
+
+.nav__links {
+    text-decoration: none;
+    color: #828282;
+}
+
+.nav__links:hover {
+    font-weight: 400;
+    color: var(--black, #070707);
+}
+
+
+
+.home {
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+
+.about,
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.about__caption {
+    padding-bottom: 28px;
+}
+
+.about__content>p {
+    padding-bottom: 48px;
+}
+
+.about__content :last-of-type {
+    padding-bottom: 100px;
+}
+
+
+.skills {
+    display: inline-block;
+}
+
+.skills__caption {
+    padding-bottom: 25px;
+}
+
+.skills__caption+p {
+    padding-bottom: 77px;
+}
+
+.skills__level>figcaption {
+    font-size: 14px;
+    color: #828282;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.skills__level .fig_figma {
+    padding-bottom: 68px;
+}
+
+.skills__item {
+    float: left;
+    padding-right: 90px;
+}
+
+.skills__item:last-of-type {
+    padding-right: 0;
+}
+
+.skills__block::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.skills__block {
+    padding-bottom: 83px;
+}
+
+.portfolio__caption {
+    padding-bottom: 68px;
+}
+
+.portfolio_text {
+    text-decoration: underline;
+    padding-top: 15px;
+    padding-bottom: 101px;
+}
+
+
+
+.contacts__caption {
+    padding-bottom: 21px;
+}
+
+.contact__btn {
+    width: 180px;
+    height: 42px;
+    background-color: #070707;
+    border: 0;
+    border-radius: 100px;
+    margin-top: 78px;
+    margin-bottom: 37px;
+
+}
+
+.contact__btn__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 1.8px;
+}
+
+.contacts__favicons_item {
+    display: inline-block;
+    max-width: 33%;
+    padding-right: 61px;
+}
+
+.contacts__favicons :last-of-type {
+    padding: 0;
+}
+
+.contacts__last_p {
+    font-size: 14px;
+    color: #828282;
+    padding-top: 44px;
+    padding-bottom: 159px;
+}
